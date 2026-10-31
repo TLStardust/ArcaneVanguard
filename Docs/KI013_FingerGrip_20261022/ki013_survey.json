@@ -1,0 +1,37 @@
+{
+ "skm_found": true,
+ "ske_found": true,
+ "bone_count": 0,
+ "bones": [],
+ "sockets": [
+  "ERR sockets: Skeleton: Property 'Sockets' for attribute 'sockets' on 'Skeleton' is protected and cannot be read"
+ ],
+ "animbp_found": true,
+ "animbp_target_skeleton": "<Object '/Game/Wizard/Mesh/SKE_Wizard.SKE_Wizard' (0x0000079C20723000) Class 'Skeleton'>",
+ "animations": {
+  "/Game/Wizard/Animations/Anim_Wizard_Cast_Spell_01": {
+   "length": 2.2666666507720947,
+   "num_frames": 748
+  },
+  "/Game/Wizard/Animations/Anim_Wizard_Cast_Spell_02": {
+   "length": 2.1666667461395264,
+   "num_frames": 4160
+  },
+  "/Game/Wizard/Animations/Anim_Wizard_Magic_Attack": {
+   "length": 3.3333332538604736,
+   "num_frames": 4900
+  },
+  "/Game/Wizard/Animations/Anim_Wizard_Magic_Heal": {
+   "length": 2.6666667461395264,
+   "num_frames": 80
+  },
+  "/Game/Wizard/Animations/Anim_Wizard_Death_Forward": {
+   "length": 3.6666667461395264,
+   "num_frames": 3410
+  },
+  "/Game/Wizard/Animations/ThirdPerson/Anim_Wizard_ThirdPersonIdle": {
+   "length": 2.633333444595337,
+   "num_frames": 78
+  }
+ }
+}

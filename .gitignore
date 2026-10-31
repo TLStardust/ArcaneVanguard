@@ -1,0 +1,60 @@
+# ---- UE 5.4 标准排除项 ----
+Binaries/
+DerivedDataCache/
+Intermediate/
+Build/
+
+# Saved/ 整体排除，但构建脚本要跟着仓库走（换机器直接能用）
+# [!] 必须写成 "Saved/*" 而不是 "Saved/" —— 父目录被整体排除后，子文件无法用 ! 取反
+Saved/*
+!Saved/Scripts/
+!Saved/Scripts/*.py
+!Saved/Scripts/*.sh
+!Saved/Scripts/*.ps1
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# 编译产物与临时文件
+*.pdb
+*.obj
+*.exp
+*.lib
+*.dll
+*.exe
+*.target
+*.modules
+
+# ---- 本项目特有 ----
+
+# 【不上传】第三方大资产（2.5 GB）—— 单独备份到 U 盘 / 网盘
+# 恢复方式见 Docs/HANDOFF_20261031.md 的「资产备份与恢复」章节
+# [!] 这些目录被排除后，克隆下来的工程会显示资产缺失（missing），
+#     必须先把备份解压回 Content/ 对应位置，路径保持一致。
+Content/Wizard/
+Content/Characters/
+Content/Stone_Golem/
+Content/SpearAnimationsV2/
+
+# 历史资产备份（Docs 下 245 MB，属于归档不是工程内容）
+Docs/AssetBackup_*/
+
+# 所有 .bak 备份（本工程有大量 .bak-<时间戳>）
+*.bak-*
+
+# 构建日志与截图（Saved 已被排除，这里兜底）
+*.log
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# AI 工作记忆（不是项目内容；关键结论已提炼进 Docs/HANDOFF_20261031.md）
+.workbuddy-ai/memory/

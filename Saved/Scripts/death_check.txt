@@ -1,0 +1,7 @@
+class = <Object '/Script/ArcaneVanguard.ArcaneVanguardCharacter' (0x000008ED8FA44B00) Class 'Class'>
+  death_montage    = None
+  respawn_delay    = 3.0
+  b_is_dead        ERR ArcaneVanguardCharacter: Failed to find property 'b_is_dead'
+  has handle_death = True
+  has respawn      = True
+  has is_dead      = True

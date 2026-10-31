@@ -1,0 +1,116 @@
+{
+ "weapon_r_offset_from_hand_r_world_cm": [
+  -4.54,
+  2.16,
+  -7.13
+ ],
+ "weapon_r_offset_from_hand_r_local_cm": [
+  -8.32,
+  2.55,
+  0.6
+ ],
+ "weapon_r_distance_from_hand_r_cm": 8.73,
+ "weapon_r_rel_rot_euler_deg": [
+  -63.2,
+  64.7,
+  -168.1
+ ],
+ "weapon_r_world_rot_euler_deg": [
+  -16.9,
+  110.8,
+  90.9
+ ],
+ "hand_r_world_rot_euler_deg": [
+  -77.1,
+  -4.5,
+  -37.2
+ ],
+ "weapon_r_axis_x_world": [
+  -0.267,
+  0.956,
+  0.118
+ ],
+ "weapon_r_axis_y_world": [
+  0.36,
+  -0.015,
+  0.933
+ ],
+ "weapon_r_axis_z_world": [
+  0.894,
+  0.291,
+  -0.34
+ ],
+ "axis_dist_cm": {
+  "thumb_01_r": {
+   "to_hand_r_axis": 5.27,
+   "to_weapon_r_axis": 3.92
+  },
+  "thumb_02_r": {
+   "to_hand_r_axis": 8.2,
+   "to_weapon_r_axis": 5.97
+  },
+  "thumb_03_r": {
+   "to_hand_r_axis": 8.7,
+   "to_weapon_r_axis": 6.22
+  },
+  "index_01_r": {
+   "to_hand_r_axis": 10.91,
+   "to_weapon_r_axis": 5.97
+  },
+  "index_02_r": {
+   "to_hand_r_axis": 13.33,
+   "to_weapon_r_axis": 8.32
+  },
+  "index_03_r": {
+   "to_hand_r_axis": 13.83,
+   "to_weapon_r_axis": 8.82
+  },
+  "middle_01_r": {
+   "to_hand_r_axis": 9.6,
+   "to_weapon_r_axis": 4.65
+  },
+  "middle_02_r": {
+   "to_hand_r_axis": 11.39,
+   "to_weapon_r_axis": 6.5
+  },
+  "middle_03_r": {
+   "to_hand_r_axis": 10.99,
+   "to_weapon_r_axis": 6.07
+  },
+  "ring_01_r": {
+   "to_hand_r_axis": 8.61,
+   "to_weapon_r_axis": 4.45
+  },
+  "ring_02_r": {
+   "to_hand_r_axis": 9.83,
+   "to_weapon_r_axis": 5.79
+  },
+  "ring_03_r": {
+   "to_hand_r_axis": 9.34,
+   "to_weapon_r_axis": 5.32
+  },
+  "pinky_01_r": {
+   "to_hand_r_axis": 8.3,
+   "to_weapon_r_axis": 5.52
+  },
+  "pinky_02_r": {
+   "to_hand_r_axis": 9.58,
+   "to_weapon_r_axis": 6.62
+  },
+  "pinky_03_r": {
+   "to_hand_r_axis": 9.7,
+   "to_weapon_r_axis": 6.77
+  }
+ },
+ "four_finger_base_centroid_xy": [
+  -73.93,
+  5.16
+ ],
+ "centroid_to_hand_r_cm": 8.91,
+ "centroid_to_weapon_r_cm": 4.2,
+ "weapon_l_offset_from_weapon_r_cm": [
+  140.84,
+  0.43,
+  -0.5
+ ]
+}

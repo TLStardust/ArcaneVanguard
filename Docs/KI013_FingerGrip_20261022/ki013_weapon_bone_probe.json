@@ -1,0 +1,291 @@
+{
+ "mesh_asset": "/Game/Wizard/Mesh/SK_wizard.SK_Wizard",
+ "skeleton": "/Game/Wizard/Mesh/SKE_Wizard.SKE_Wizard",
+ "mesh_sockets": "ERR SkeletalMesh: Property 'Sockets' for attribute 'sockets' on 'SkeletalMesh' is protected and cannot be read",
+ "editor_world": "ThirdPersonMap",
+ "actor": "SkeletalMeshActor_UAID_E073E717E70E980D03_1879676311",
+ "comp_bone_api": [
+  "bone_is_child_of",
+  "defer_kinematic_bone_update",
+  "does_socket_exist",
+  "find_closest_bone_k2",
+  "find_constraint_bone_name",
+  "get_all_socket_names",
+  "get_attach_socket_name",
+  "get_bone_index",
+  "get_bone_linear_velocity",
+  "get_bone_mass",
+  "get_bone_name",
+  "get_bone_transform",
+  "get_num_bones",
+  "get_parent_bone",
+  "get_socket_bone_name",
+  "get_socket_location",
+  "get_socket_quaternion",
+  "get_socket_rotation",
+  "get_socket_transform",
+  "hide_bone_by_name",
+  "is_bone_hidden_by_name",
+  "kinematic_bones_update_type",
+  "match_ref_bone",
+  "per_bone_motion_blur",
+  "transform_from_bone_space",
+  "transform_to_bone_space",
+  "un_hide_bone_by_name"
+ ],
+ "bone_index_hand_r": 30,
+ "bone_index_weapon_r": 46,
+ "bone_index_weapon_l": 24,
+ "bone_index_lowerarm_r": 29,
+ "comp_socket_names": "ERR 'SkeletalMeshComponent' object has no attribute 'get_socket_names'",
+ "bones": {
+  "lowerarm_r": {
+   "pos": [
+    -44.616,
+    -3.024,
+    135.472
+   ],
+   "quat": [
+    0.92464,
+    -0.07722,
+    0.35102,
+    -0.12593
+   ]
+  },
+  "hand_r": {
+   "pos": [
+    -65.21,
+    3.341,
+    114.889
+   ],
+   "quat": [
+    -0.58036,
+    -0.22805,
+    -0.27276,
+    0.73265
+   ]
+  },
+  "weapon_r": {
+   "pos": [
+    -69.746,
+    5.501,
+    107.754
+   ],
+   "quat": [
+    0.52156,
+    0.63086,
+    0.48518,
+    0.30754
+   ]
+  },
+  "weapon_l": {
+   "pos": [
+    71.092,
+    5.935,
+    107.253
+   ],
+   "quat": [
+    -0.45312,
+    -0.2841,
+    -0.52682,
+    -0.66063
+   ]
+  },
+  "index_01_r": {
+   "pos": [
+    -74.371,
+    9.275,
+    106.588
+   ],
+   "quat": [
+    0.62269,
+    0.26351,
+    0.33126,
+    -0.65809
+   ]
+  },
+  "index_02_r": {
+   "pos": [
+    -76.89,
+    9.767,
+    101.259
+   ],
+   "quat": [
+    -0.60168,
+    -0.32,
+    -0.37066,
+    0.63103
+   ]
+  },
+  "index_03_r": {
+   "pos": [
+    -77.27,
+    10.11,
+    97.845
+   ],
+   "quat": [
+    0.6145,
+    0.31499,
+    0.36453,
+    -0.62474
+   ]
+  },
+  "middle_01_r": {
+   "pos": [
+    -74.304,
+    6.43,
+    105.99
+   ],
+   "quat": [
+    0.60654,
+    0.35184,
+    0.38144,
+    -0.60235
+   ]
+  },
+  "middle_02_r": {
+   "pos": [
+    -76.189,
+    6.358,
+    101.248
+   ],
+   "quat": [
+    -0.60091,
+    -0.3492,
+    -0.37769,
+    0.61181
+   ]
+  },
+  "middle_03_r": {
+   "pos": [
+    -75.716,
+    6.578,
+    97.013
+   ],
+   "quat": [
+    0.62373,
+    0.32413,
+    0.35307,
+    -0.61744
+   ]
+  },
+  "ring_01_r": {
+   "pos": [
+    -73.817,
+    3.693,
+    106.04
+   ],
+   "quat": [
+    0.60203,
+    0.39107,
+    0.34803,
+    -0.60291
+   ]
+  },
+  "ring_02_r": {
+   "pos": [
+    -75.041,
+    3.165,
+    101.576
+   ],
+   "quat": [
+    -0.57857,
+    -0.42201,
+    -0.3763,
+    0.58785
+   ]
+  },
+  "ring_03_r": {
+   "pos": [
+    -74.548,
+    3.208,
+    97.823
+   ],
+   "quat": [
+    0.58515,
+    0.41144,
+    0.36404,
+    -0.59648
+   ]
+  },
+  "pinky_01_r": {
+   "pos": [
+    -73.24,
+    1.23,
+    105.497
+   ],
+   "quat": [
+    0.56798,
+    0.49006,
+    0.36713,
+    -0.54995
+   ]
+  },
+  "pinky_02_r": {
+   "pos": [
+    -74.467,
+    0.866,
+    102.32
+   ],
+   "quat": [
+    -0.53133,
+    -0.52368,
+    -0.40848,
+    0.52592
+   ]
+  },
+  "pinky_03_r": {
+   "pos": [
+    -74.558,
+    0.738,
+    99.766
+   ],
+   "quat": [
+    0.56488,
+    0.47786,
+    0.37315,
+    -0.55975
+   ]
+  },
+  "thumb_01_r": {
+   "pos": [
+    -67.005,
+    8.3,
+    112.371
+   ],
+   "quat": [
+    0.62709,
+    -0.16516,
+    0.64238,
+    -0.40845
+   ]
+  },
+  "thumb_02_r": {
+   "pos": [
+    -67.768,
+    11.129,
+    108.416
+   ],
+   "quat": [
+    -0.63133,
+    0.10197,
+    -0.69847,
+    0.32118
+   ]
+  },
+  "thumb_03_r": {
+   "pos": [
+    -68.175,
+    11.517,
+    103.803
+   ],
+   "quat": [
+    0.71071,
+    -0.0522,
+    0.64959,
+    -0.26495
+   ]
+  }
+ },
+ "destroyed": true
+}

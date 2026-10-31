@@ -1,0 +1,9 @@
+Character = <Object '/Script/ArcaneVanguard.ArcaneVanguardCharacter' (0x0000073474280F00) Class 'Class'>
+  b_use_ragdoll_on_death   ERR ArcaneVanguardCharacter: Failed to find property '
+  respawn_delay            = 3.799999952316284
+  death_montage            = None
+  has drop_weapon_on_death = True
+  has handle_death       = True
+  has respawn            = True
+Weapon = <Object '/Script/ArcaneVanguard.ArcaneVanguardWeapon' (0x0000073474282800) Class 'Class'>
+  has enable_physics_drop = True

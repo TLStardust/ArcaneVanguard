@@ -1,0 +1,17 @@
+{
+  "SK_wizard_cloth_original": {
+    "bUseSelfCollisions": "True",
+    "SelfCollisionThickness": "10.0",
+    "SelfCollisionFriction": "0.0",
+    "CollisionThickness": "1.0",
+    "FrictionCoefficient": "0.5",
+    "DampingCoefficient": "0.06696701049804688",
+    "GravityScale": "1.0",
+    "TotalMass": "0.5",
+    "Density": "0.3499999940395355",
+    "bUseSelfIntersections": "False",
+    "UniformMass": "0.0001500000071246177",
+    "LocalDampingCoefficient": "0.0",
+    "SubdivisionCount": "1"
+  }
+}
