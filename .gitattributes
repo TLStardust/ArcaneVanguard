@@ -1,37 +1,29 @@
-# ---- Git LFS 规则（UE 二进制资产）----
-# 启用方式（每台机器只需一次）：
-#   git lfs install
+# ---- 二进制资产的存储策略 ----
 #
-# [!] 为什么必须用 LFS：
-#     Content/Wizard/Textures/T_Wizard_head_color.uasset 单个就有 96 MB，
-#     超过 GitHub 普通文件的 100 MB 硬限制。不走 LFS 会被直接拒绝推送。
-#     而且 .uasset 是二进制，不走 LFS 的话每次改动都存一份全量，仓库会迅速膨胀。
+# 当前仓库只包含「代码 + 配置 + 文档 + 项目自己的小资产」（约 9 MB），
+# 大资产（Wizard / Characters / Stone_Golem / SpearAnimationsV2）不进 Git，
+# 单独打包成 ArcaneVanguard_Assets_<日期>.zip（见 Docs/HANDOFF_20261031.md §9）。
+#
+# 因此这里**不启用 LFS** —— 9 MB 的 uasset 走普通存储更省事，
+# clone 后不需要额外跑 git lfs pull。
+#
+# [!] 如果以后要把大资产重新纳入 Git，先 `git lfs install`，
+#     再把下面这段的注释去掉，然后重新 add：
+#
+# *.uasset filter=lfs diff=lfs merge=lfs -text
+# *.umap filter=lfs diff=lfs merge=lfs -text
+# *.uexp filter=lfs diff=lfs merge=lfs -text
+# *.ubulk filter=lfs diff=lfs merge=lfs -text
+# *.png filter=lfs diff=lfs merge=lfs -text
+# *.jpg filter=lfs diff=lfs merge=lfs -text
+# *.tga filter=lfs diff=lfs merge=lfs -text
+# *.wav filter=lfs diff=lfs merge=lfs -text
+# *.mp4 filter=lfs diff=lfs merge=lfs -text
+#
+# 注意：Wizard 贴图单个最大 96 MB，超 GitHub 普通文件 100 MB 硬限制，
+#       那时 LFS 是必须的，不是可选的。
 
-*.uasset filter=lfs diff=lfs merge=lfs -text
-*.umap filter=lfs diff=lfs merge=lfs -text
-*.uexp filter=lfs diff=lfs merge=lfs -text
-*.ubulk filter=lfs diff=lfs merge=lfs -text
-
-# 图片（贴图源文件 / 文档截图）
-*.png filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.tga filter=lfs diff=lfs merge=lfs -text
-*.exr filter=lfs diff=lfs merge=lfs -text
-
-# 音频
-*.wav filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
-
-# 模型源文件
-*.fbx filter=lfs diff=lfs merge=lfs -text
-*.obj filter=lfs diff=lfs merge=lfs -text
-
-# 视频（录屏 / 演示）
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mov filter=lfs diff=lfs merge=lfs -text
-
-# ---- 文本文件保持正常 diff（便于 code review）----
+# ---- 文本文件：统一换行 + 正常 diff（便于 code review）----
 *.cpp text
 *.h text
 *.cs text
@@ -41,3 +33,7 @@
 *.sh text
 *.json text
 *.uproject text
+
+# ---- 二进制：不做换行转换 ----
+*.uasset binary
+*.umap binary

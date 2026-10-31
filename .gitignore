@@ -46,6 +46,22 @@ Content/SpearAnimationsV2/
 # 历史资产备份（Docs 下 245 MB，属于归档不是工程内容）
 Docs/AssetBackup_*/
 
+# ---- 大资产不进 Git，单独打包成 zip ----
+# 详见 Docs/HANDOFF_20261031.md §9
+# 这些是第三方资源（UECandy / 商城资产包），下载后不会再变，
+# 且单个贴图最大 96 MB（超 GitHub 100 MB 硬限制），必须走 LFS 才放得下。
+# 恢复方式：下载 ArcaneVanguard_Assets_<日期>.zip 解压到工程根目录。
+Content/Wizard/
+Content/Characters/
+Content/Stone_Golem/
+Content/SpearAnimationsV2/
+
+# [!] Content/LevelPrototyping 虽然也在资产包里，但只有 272 KB 且可能被关卡引用，
+#     已在首次提交中跟踪，故不排除（.gitignore 对已跟踪文件无效）。
+
+# 资产包 zip 本身也不要进仓库
+*.zip
+
 # 所有 .bak 备份（本工程有大量 .bak-<时间戳>）
 *.bak-*
 
